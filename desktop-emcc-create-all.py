@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 if __name__ == "__main__":
     directory = sys.path[0]
-    xml_file = directory + "/cmake/conan/graph/libs.xml"
+    xml_file = directory + "/cmake/conan/graph/crealityprint.xml"
     
     tree = ET.parse(xml_file)
     root = tree.getroot()

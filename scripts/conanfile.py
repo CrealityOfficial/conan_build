@@ -47,7 +47,7 @@ class MainEntry(ConanFile):
     def source(self):
         print("[conan DEBUG] source.")
 
-        self.run("git clone http://172.20.180.12:8050/yanfa4/shared/cmake")
+        self.run("git clone https://github.com/CrealityOfficial/shared-cmake.git")
         self.run("git clone " + self.repository + " -b version-" + self.version + " " + self.name)
             
     def export_sources(self):
