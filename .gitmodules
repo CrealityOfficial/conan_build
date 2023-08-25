@@ -1,1 +1,5 @@
 
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/CrealityOfficial/shared-cmake.git
+	branch = master
