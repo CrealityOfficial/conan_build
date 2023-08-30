@@ -25,4 +25,10 @@ if __name__ == "__main__":
             
     libs = createUtil.create_libs_from_txt(file)
     print('create patch :' + str(libs))
-    createUtil.build_recipes(libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file)
+    
+    libDict = createUtil.create_base_libs_from_xml(xml_file)
+    #print('create patch all : ' + str(libDict))
+    
+    sequence_libs = createUtil.collect_sequece_libs(libDict, libs)
+    print('create patch qequence : ' + str(sequence_libs))
+    createUtil.build_recipes(sequence_libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file)
