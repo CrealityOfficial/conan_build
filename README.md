@@ -10,7 +10,11 @@ relates
 - [Python 3.9](https://www.python.org/)
 - [CMake 3.23 or higher](https://cmake.org/)
 - [Conan >=1.50 <=1.56.0](https://conan.io/)
-- compile toolchains  
+- [Qt5.13.2](https://www.qt.io/)
+- Compile toolchains
+  - Windows: Visual Studio with MSVC 2019 or higher
+  - MacOS: XCode 13.2
+  - Linux: GCC9
 
 libs repositories
 -----------
@@ -53,6 +57,7 @@ libs repositories
 windows
 
 ```Shell
+set QT5_DIR=%QTDIR%
 git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
@@ -63,6 +68,7 @@ create_patch.py -n opensource-win -f patches/CrealityPrint.patch
 Mac
 
 ```Shell
+export QT5_DIR=$QTDIR
 git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
@@ -72,6 +78,7 @@ python3 create_patch.py -n opensource-mac -f patches/CrealityPrint.patch
 Linux
 
 ```Shell
+export QT5_DIR=$QTDIR
 git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
