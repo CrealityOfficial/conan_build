@@ -48,6 +48,47 @@ libs repositories
 - [tbb](https://github.com/CrealityOfficial/tbb)
 - [libtess2](https://github.com/CrealityOfficial/libtess2)
 
+## build 
+
+windows
+
+```Shell
+git clone https://github.com/CrealityOfficial/conan_build.git
+cd conan-build
+git submodule update --init
+copy file conan-build/profiles/desktop/win to the location of conan .conan/profiles/win
+create_patch.py -n opensource-win -f patches/CrealityPrint.patch
+```
+
+Mac
+
+```Shell
+git clone https://github.com/CrealityOfficial/conan_build.git
+cd conan-build
+git submodule update --init
+python3 create_patch.py -n opensource-mac -f patches/CrealityPrint.patch
+```
+
+Linux
+
+```Shell
+git clone https://github.com/CrealityOfficial/conan_build.git
+cd conan-build
+git submodule update --init
+cp ./profiles/desktop/linux ~/.conan/profiles/linux
+python3 create_patch.py -n opensource-linux -f patches/CrealityPrint.patch
+```
+
+You can also build conan libs separately
+
+```Plain
+python3 create_patch.py -n opensource-linux -f patches/sub1.patch
+python3 create_patch.py -n opensource-linux -f patches/sub2.patch
+python3 create_patch.py -n opensource-linux -f patches/sub3.patch
+python3 create_patch.py -n opensource-linux -f patches/sub4.patch
+```
+
+
 
 license
 -------
