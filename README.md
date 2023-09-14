@@ -90,10 +90,10 @@ python3 create_patch.py -n opensource-linux -f patches/CrealityPrint.patch -u Fa
 You can also build conan libs separately
 
 ```Plain
-python3 create_patch.py -n opensource-linux -f patches/sub1.patch
-python3 create_patch.py -n opensource-linux -f patches/sub2.patch
-python3 create_patch.py -n opensource-linux -f patches/sub3.patch
-python3 create_patch.py -n opensource-linux -f patches/sub4.patch
+python3 create_patch.py -n opensource-linux -f patches/sub1.patch -u False
+python3 create_patch.py -n opensource-linux -f patches/sub2.patch -u False
+python3 create_patch.py -n opensource-linux -f patches/sub3.patch -u False
+python3 create_patch.py -n opensource-linux -f patches/sub4.patch -u False
 ```
 
 
