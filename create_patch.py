@@ -12,8 +12,9 @@ if __name__ == "__main__":
     
     name = ''
     file = ''
+    upload = True
     try:
-        opts, args = getopt.getopt(argv,"n:f:")
+        opts, args = getopt.getopt(argv,"n:f:u:")
     except getopt.GetoptError:
         print("create.py -n <name>")
         sys.exit(2)
@@ -22,6 +23,9 @@ if __name__ == "__main__":
             name = arg
         if opt in ("-f"):
             file = arg
+        if opt in ("-u"):
+            if arg != "True":
+                upload = False
             
     libs = createUtil.create_libs_from_txt(file)
     print('create patch :' + str(libs))
@@ -31,4 +35,4 @@ if __name__ == "__main__":
     
     sequence_libs = createUtil.collect_sequece_libs(libDict, libs)
     print('create patch qequence : ' + str(sequence_libs))
-    createUtil.build_recipes(sequence_libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file)
+    createUtil.build_recipes(sequence_libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file, upload)

@@ -12,6 +12,7 @@ if __name__ == "__main__":
     
     name = ''
     file = ''
+    upload = True
     try:
         opts, args = getopt.getopt(argv,"n:f:")
     except getopt.GetoptError:
@@ -22,6 +23,9 @@ if __name__ == "__main__":
             name = arg
         if opt in ("-f"):
             file = arg
+        if opt in ("-u"):
+            if arg != "True":
+                upload = False
             
     libs = createUtil.create_libs_from_txt(file)
-    createUtil.build_recipes(libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file)
+    createUtil.build_recipes(libs, createUtil.get_channel_from_type(name), createUtil.get_profile_from_type(name), xml_file, upload)

@@ -62,7 +62,7 @@ git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
 copy file conan-build/profiles/desktop/win to the location of conan .conan/profiles/
-create_patch.py -n opensource-win -f patches/CrealityPrint.patch
+create_patch.py -n opensource-win -f patches/CrealityPrint.patch -u False
 ```
 
 Mac
@@ -73,7 +73,7 @@ git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
 copy file conan-build/profiles/desktop/mac to the location of conan .conan/profiles/
-python3 create_patch.py -n opensource-mac -f patches/CrealityPrint.patch
+python3 create_patch.py -n opensource-mac -f patches/CrealityPrint.patch -u False
 ```
 
 Linux
@@ -84,7 +84,7 @@ git clone https://github.com/CrealityOfficial/conan_build.git
 cd conan-build
 git submodule update --init
 cp ./profiles/desktop/linux ~/.conan/profiles/linux
-python3 create_patch.py -n opensource-linux -f patches/CrealityPrint.patch
+python3 create_patch.py -n opensource-linux -f patches/CrealityPrint.patch -u False
 ```
 
 You can also build conan libs separately
