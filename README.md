@@ -59,7 +59,7 @@ windows
 ```Shell
 set QT5_DIR=%QTDIR%
 git clone https://github.com/CrealityOfficial/conan_build.git
-cd conan-build
+cd conan_build
 git submodule update --init
 copy file conan-build/profiles/desktop/win to the location of conan .conan/profiles/
 create_patch.py -n opensource-win -f patches/CrealityPrint.patch -u False
@@ -70,7 +70,7 @@ Mac
 ```Shell
 export QT5_DIR=$QTDIR
 git clone https://github.com/CrealityOfficial/conan_build.git
-cd conan-build
+cd conan_build
 git submodule update --init
 copy file conan-build/profiles/desktop/mac to the location of conan .conan/profiles/
 python3 create_patch.py -n opensource-mac -f patches/CrealityPrint.patch -u False
@@ -81,7 +81,7 @@ Linux
 ```Shell
 export QT5_DIR=$QTDIR
 git clone https://github.com/CrealityOfficial/conan_build.git
-cd conan-build
+cd conan_build
 git submodule update --init
 cp ./profiles/desktop/linux ~/.conan/profiles/linux
 python3 create_patch.py -n opensource-linux -f patches/CrealityPrint.patch -u False
