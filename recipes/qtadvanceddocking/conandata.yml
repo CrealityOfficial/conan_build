@@ -1,7 +1,7 @@
 license: "<GLP>"
 author: "<zenggui> <anoob@sina.cn>"
 url: "<xxxxxx>"
-repository: "https://github.com/CrealityOfficial/qtadvanceddocking"
+external_repository: "https://github.com/CrealityOfficial/qtadvanceddocking"
 description: "<qtadvanceddocking>"
 topics: "<qt>,<docker>,<qtadvanceddocking>"
 

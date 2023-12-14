@@ -1,7 +1,7 @@
 license: "<GLP>"
 author: "<ffmpeg> <anoob@sina.cn>"
 url: "<xxxxxx>"
-repository: "https://github.com/CrealityOfficial/ffmpeglib"
+external_repository: "https://github.com/CrealityOfficial/ffmpeglib"
 description: "<ffmpeg>"
 topics: "<ffmpeg>,<vedio>,<zip>"
 

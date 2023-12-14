@@ -1,7 +1,7 @@
 license: "<GLP>"
 author: "<ffmpeg> <anoob@sina.cn>"
 url: "<xxxxxx>"
-repository: "https://github.com/CrealityOfficial/qcxffmpeg"
+external_repository: "https://github.com/CrealityOfficial/qcxffmpeg"
 description: "<qcxffmpeg>"
 topics: "<ffmpeg>,<wrapper>,<>"
 

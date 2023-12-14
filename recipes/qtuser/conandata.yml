@@ -1,7 +1,7 @@
 license: "<GLP>"
 author: "<zenggui> <anoob@sina.cn>"
 url: "<xxxxxx>"
-repository: "https://github.com/CrealityOfficial/qtuser"
+external_repository: "https://github.com/CrealityOfficial/qtuser"
 description: "<qtuser>"
 topics: "<qtuser_core>,<qtuser_3d>,<qtuser_qml>"
 
